@@ -1,27 +1,21 @@
 {
-  "name": "react-native-weather-app",
+  "name": "rn-weather",
   "version": "1.0.0",
-  "description": "pet app with react native",
-  "main": "index.js",
+  "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Stskdrv/rn-weather.git"
-  },
-  "keywords": [
-    "react",
-    "native",
-    "pet"
-  ],
-  "author": "Stanislav Kadyrov",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Stskdrv/rn-weather/issues"
-  },
-  "homepage": "https://github.com/Stskdrv/rn-weather#readme",
   "dependencies": {
-    "expo-cli": "^6.0.8"
-  }
+    "expo": "~47.0.9",
+    "expo-status-bar": "~1.4.2",
+    "react": "18.1.0",
+    "react-native": "0.70.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9"
+  },
+  "private": true
 }
