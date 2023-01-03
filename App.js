@@ -5,7 +5,7 @@ import { Alert } from 'react-native';
 import axios from 'axios';
 
 
-const API_KEY = "5b8262412595fde76b64573b8fb46904";
+const API_KEY = "_";
 
 const getApiUrl = (latitude, longitude) => `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${process.env.API_KEY}`;
 
