@@ -24,8 +24,8 @@ export default class extends Component {
       await this.getWeather(latitude, longitude);
     }
     catch (e) {
-      Alert.alert('Cannot get location data', 'Please try again')
-      console.log(e);
+      Alert.alert('We run into an error', `Error: ${e}`)
+      console.log(e); 
     }
     // return currentLocation;
   }
@@ -39,7 +39,6 @@ export default class extends Component {
       temp: Math.round(temp),
       condition: weather[0].main,
     });
-    console.log(weather[0]);
   } 
 
   componentDidMount() {
