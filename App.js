@@ -5,9 +5,10 @@ import { Alert } from 'react-native';
 import axios from 'axios';
 import Weather from './Weather';
 
-const API_KEY = '5b8262412595fde76b64573b8fb46904';
+const API_KEY = '_';
 
-const getApiUrl = (latitude, longitude) => `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}&units=metric`;
+const getApiUrl = (latitude, longitude) =>
+  `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}&units=metric`;
 
 export default class extends Component {
 
@@ -27,7 +28,6 @@ export default class extends Component {
       Alert.alert('We run into an error', `Error: ${e}`)
       console.log(e); 
     }
-    // return currentLocation;
   }
 
   getWeather = async (latitude, longitude) => {
@@ -47,9 +47,7 @@ export default class extends Component {
   render() {
     const { isLoading, temp, condition } = this.state;
     return (
-      isLoading ?
-        <Loading /> :
-        <Weather temp={temp} condition={condition} />
+      isLoading ? <Loading /> : <Weather temp={temp} condition={condition} />
     );
   }
 
