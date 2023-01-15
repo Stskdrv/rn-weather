@@ -21,7 +21,7 @@ const weatherOptions = {
         iconName: 'weather-pouring',
         gradient: ['#000046', '#1CB5E0'],
         title: 'Maybe you will get wet',
-        subtitle: 'But then tou will see rainbow!'
+        subtitle: 'But then you will see rainbow!'
     },
     Snow: {
         iconName: 'snowflake',
